@@ -1,0 +1,11 @@
+.navbar{
+    width: 90%;
+    margin: auto;
+}
+.logocolor{
+    width: 130px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}

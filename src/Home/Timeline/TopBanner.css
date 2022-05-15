@@ -1,0 +1,12 @@
+.topbanner{
+    width: 75%;
+    margin: auto;
+}
+.topbanner img{
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 7%;
+}
+.firstbanner{
+    /* margin-top: 7%; */
+}

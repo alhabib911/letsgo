@@ -1,0 +1,47 @@
+.campaign-title h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0px 40px 97px;
+    color: #084C9D;
+}
+.first-offer{
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 grey;
+    display: flex;
+    width: 80%;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.first-offer img{
+    width: 450px;
+    margin: -40px;
+    border-radius: 5px;
+}
+.learnmore-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCCD03;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.learnmore-btn a{
+    padding-left: 5px;
+    color: #1C3C4A;
+    font-weight: 500;
+}
+
+.offer-banner{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.offer-content h6{
+    font-weight: 500;
+    color: #084C9D;
+}
+
