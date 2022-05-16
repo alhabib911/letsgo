@@ -5,6 +5,8 @@ import CarAlbum from './Home/CarAlbum';
 import ContactUs from './Home/ContactUs';
 import Home from './Home/Home';
 import NotFoundPage from './Home/NotFoundPage';
+import Login from './Authentication/Login';
+import Register from './Authentication/Register'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path='/about' element={<AboutUs></AboutUs>}></Route>
         <Route path='/album' element={<CarAlbum></CarAlbum>}></Route>
         <Route path='/contact' element={<ContactUs></ContactUs>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>
       </Routes>
     </div>

@@ -5,7 +5,14 @@
 .logocolor{
     width: 150px;
 }
-.menu{
-    display: flex;
-    flex-direction: row;
+.logo img{
+    width: 150px;
+}
+.navbar li{
+    color: #1C3C6B;
+    font-weight: 500;
+    font-size: 14px;
+}
+.account{
+    font-size: 18px;
 }
