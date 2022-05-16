@@ -1,6 +1,6 @@
 import React from 'react';
+import Footer from '../Shared/Footer';
 import Booking from './Booking';
-import Footer from './Footer';
 import Navbar from './Navbar';
 import Timeline from './Timeline/Timeline';
 
