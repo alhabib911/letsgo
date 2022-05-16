@@ -23,31 +23,56 @@ const Booking = () => {
                         <form>
                             <div className="booking-form-field">
                                 <div className="location gap-2">
-                                    <select class="select select-bordered">
-                                        <option disabled selected>FROM</option>
-                                        <option>Star Wars</option>
-                                        <option>Harry Potter</option>
-                                        <option>Lord of the Rings</option>
-                                        <option>Planet of the Apes</option>
-                                        <option>Star Trek</option>
-                                    </select>
-                                    <select class="select select-bordered">
-                                        <option disabled selected>TO</option>
-                                        <option>Star Wars</option>
-                                        <option>Harry Potter</option>
-                                        <option>Lord of the Rings</option>
-                                        <option>Planet of the Apes</option>
-                                        <option>Star Trek</option>
-                                    </select>
+                                    <div className="picup-location">
+                                        <h2>FROM</h2>
+                                        <select class="select-bordered">
+                                            <option disabled selected>Select a city</option>
+                                            <option>Star Wars</option>
+                                            <option>Harry Potter</option>
+                                            <option>Lord of the Rings</option>
+                                            <option>Planet of the Apes</option>
+                                            <option>Star Trek</option>
+                                        </select>
+                                        <p>Click to choose your Location</p>
+                                    </div>
+                                    <div className="drop-location">
+                                        <h2>TO</h2>
+                                        <select class="select-bordered">
+                                            <option disabled selected>Select a city</option>
+                                            <option>Star Wars</option>
+                                            <option>Harry Potter</option>
+                                            <option>Lord of the Rings</option>
+                                            <option>Planet of the Apes</option>
+                                            <option>Star Trek</option>
+                                        </select>
+                                        <p>Click to choose your Location</p>
+                                    </div>
                                 </div>
-                                <div className="date-time gap-2">
+                                <div className="date gap-2">
                                     <div className='date'>
-                                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                                        <AiFillCalendar></AiFillCalendar>
+                                        <div className="journey-date">
+                                            <h2>Journey Date</h2>
+                                            <div className='calender'>
+                                                <input type="text" name="journey-date" id="" placeholder='Journey Date' />
+                                                <div className="calender-icon">
+                                                    <AiFillCalendar></AiFillCalendar>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="return-date">
+                                            <h2>Return Date</h2>
+                                            <div className="calender">
+                                                <input type="text" name="return-date" id="" placeholder='Return-Date' />
+                                                <div className="calender-icon">
+                                                    <AiFillCalendar></AiFillCalendar>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
 
                                     <div className='time'>
-                                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+
                                     </div>
                                 </div>
                             </div>
