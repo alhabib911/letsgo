@@ -23,6 +23,13 @@
 }
 .booking-title h2{
     font-size: 20px;
+    margin: -65px;
+    color: #0E2586;
+    font-weight: 600;
+    background-color: #fff;
+    box-shadow: 0 0 8px #EFF7FF;
+    padding: 18px 120px 18px 120px;
+    border-radius: 10px;
 }
 .location{
     width: 50%;

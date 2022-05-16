@@ -1,0 +1,80 @@
+.login-container{
+    padding: 70px 0 70px 0;
+    background-color: #EBF0F4;
+}
+.login-form{
+    width: 45%;
+    margin: auto;
+    border: 1px solid rgb(248, 248, 248);
+    background-color: #fff;
+    border-radius: 5px;
+}
+.from-divider{
+    margin: 18px 0 18px 0;
+}
+.divider{
+    width: 90%;
+    margin: auto;
+}
+.email{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 5px 0 5px 12px;
+}
+.email input{
+    width: 100%;
+    margin: 20px 0 0 -10px;
+    border: none;
+    outline: none;
+}
+.password{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 5px 0 5px 12px;
+}
+.password input{
+    width: 100%;
+    margin: 20px 0 0 -38px;
+    border: none;
+    outline: none;
+}
+.login-form-field{
+    width: 75%;
+    margin: auto;
+}
+.form-title h2{
+    width: 75%;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+    background-color: #1C3C6B;
+    padding: 14px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.login-btn input{
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+.switch-register{
+    margin: 25px 0 70px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.switch-register span{
+    font-weight: 600;
+    color: #1C3C6B;
+}

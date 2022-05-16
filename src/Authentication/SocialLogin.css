@@ -1,0 +1,19 @@
+.social-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.social-login span{
+    font-size: 20px;
+    padding-right: 4px;
+}
+.social-login h2{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 12px 155px;
+    cursor: pointer;
+}

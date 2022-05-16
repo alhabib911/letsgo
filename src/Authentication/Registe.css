@@ -1,0 +1,39 @@
+.phone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 5px 0 5px 12px;
+}
+.phone input{
+    width: 100%;
+    margin: 20px 0 0 -16px;
+    border: none;
+    outline: none;
+}
+.register-form{
+    width: 45%;
+    margin: auto;
+    border: 1px solid rgb(248, 248, 248);
+    background-color: #fff;
+    border-radius: 5px;
+}
+.register-form-field{
+    width: 75%;
+    margin: auto;
+}
+.register-btn{
+    display: flex;
+    justify-content: center;
+    background-color: #1C3C6B;
+    padding: 14px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.register-btn input{
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}

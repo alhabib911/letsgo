@@ -1,10 +1,12 @@
 import React from 'react';
+import './SocialLogin.css'
+import { FcGoogle } from 'react-icons/fc';
 
 const SocialLogin = () => {
     return (
-        <div>
-            <h2>This is Social Login Page</h2>
-        </div>
+            <div className='social-login'>
+                 <h2> <span><FcGoogle></FcGoogle></span> Login With Google</h2>
+            </div>
     );
 };
 
