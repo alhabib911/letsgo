@@ -44,7 +44,7 @@
 }
 .picup-location select{
     border: none;
-    width: 100%;
+    width: 90%;
     cursor: pointer;
 }
 .picup-location p{
@@ -58,7 +58,7 @@
 }
 .drop-location select{
     border: none;
-    width: 100%;
+    width: 90%;
     cursor: pointer;
 }
 .drop-location{
@@ -81,23 +81,42 @@
   border: 1px solid gainsboro;
     padding: 20px 0 8px 7px;
     border-radius: 10px; 
+    
+}
+.journey-date h2{
+    text-align:left ;
+    margin: -16px 0 0 0;
 }
 .return-date{
     width: 50%;
-    margin: 0 0 0 20px; 
-  border: 1px solid gainsboro;
-    padding: 20px 0 8px 7px;
+    margin: 0 0 0 20px;
+    border: 1px solid gainsboro;
+    padding: 3px 0 8px 10px;
     border-radius: 10px; 
 }
 .journey-date input{
-    width: 80%;
-    padding: 8px 0 8px 0;
+    width: 100%;
+    padding: 8px 0 8px 70px;
     outline: none;
+    cursor: pointer;
+}
+.journey-date p{
+    font-size: 12px;
+    text-align: center;
+    color: #adadad;
+    margin-top: 10px;
+}
+.return-date p{
+    font-size: 12px;
+    text-align: center;
+    color: #adadad;
+    margin-top: 10px;
 }
 .return-date input{
-    width: 80%;
-    padding: 8px 0 8px 0;
+    width: 100%;
+    padding: 8px 0 8px 70px;
     outline: none;
+    cursor: pointer;
 }
 .booking-form-field{
     width: 95%; 
@@ -108,9 +127,9 @@
 .search-btn {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 14px;
     margin-bottom: 60px;
-    padding-bottom: 26px;
+    padding-bottom: 28px;
 }
 .search-btn input{
     background-color: #FCCD03;
@@ -122,6 +141,23 @@
     display: flex;
     align-items: center;
 }
-.calender-icon{
-    cursor: pointer;
+.form-control{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    outline: none;
+    border: none;
 }
+.calender-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.custom-input {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .custom-input:focus {
+    outline: none;
+  }
