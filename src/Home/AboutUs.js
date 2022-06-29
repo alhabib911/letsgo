@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutUs = () => {
+const AboutUs = ({booking}) => {
     return (
         <div>
             This is About Us Page

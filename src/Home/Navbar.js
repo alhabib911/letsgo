@@ -3,8 +3,18 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'
 import logocolor from '../image/logo/logocolor.png'
 import { MdAccountCircle } from 'react-icons/md';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init';
+import { signOut } from 'firebase/auth';
+import { BiLogOut } from 'react-icons/bi'
+
 
 const Navbar = () => {
+    const [user] = useAuthState(auth)
+    const handleSignOut = () => {
+        signOut(auth)
+        localStorage.removeItem('accessToken');
+    }
     return (
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -19,6 +29,9 @@ const Navbar = () => {
                         <li><Link to='/contact'>Contact Us</Link></li>
                         <li><Link to='/login'>Login</Link></li>
                         <li><Link to='/register'>Register</Link></li>
+                        {
+                        user && <li><Link to='/dashboard'>Dashboard</Link></li>
+                    }
                     </ul>
                 </div>
                 <div className="logo">
@@ -31,6 +44,9 @@ const Navbar = () => {
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/album'>Car Album</Link></li>
                     <li><Link to='/contact'>Contact Us</Link></li>
+                    {
+                        user && <li><Link to='/dashboard'>Dashboard</Link></li>
+                    }
                 </ul>
             </div>
             <div class="navbar-end">
@@ -48,8 +64,28 @@ const Navbar = () => {
                                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                                 </a>
                                 <ul class="p-2">
-                                    <li><Link to='/login'>Login</Link></li>
-                                    <li><Link to='/register'>Register</Link></li>
+
+                                    {   
+                                        user ?
+                                            <div className="diaplayName">
+                                                
+                                                <Link to='/home'><span>Profile</span></Link>
+                                            </div>
+                                            :
+                                            <Link to='/login'><span></span></Link>
+                                    }
+                                    {
+                                        user ?
+                                            <Link to='/login' onClick={handleSignOut}><BiLogOut /><span>Log Out</span></Link>
+                                            :
+                                            <Link to='/login'><span>Login</span></Link>
+                                    }
+                                    {
+                                        user ?
+                                            <Link to='/login' onClick={handleSignOut}></Link>
+                                            :
+                                            <Link to='/register'><span>Register</span></Link>
+                                    }
                                 </ul>
                             </li>
                         </ul>

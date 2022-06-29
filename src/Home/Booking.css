@@ -96,7 +96,7 @@
 }
 .journey-date input{
     width: 100%;
-    padding: 8px 0 8px 70px;
+    padding: 8px 0 8px 15px;
     outline: none;
     cursor: pointer;
 }
@@ -114,7 +114,7 @@
 }
 .return-date input{
     width: 100%;
-    padding: 8px 0 8px 70px;
+    padding: 8px 0 8px 15px;
     outline: none;
     cursor: pointer;
 }
@@ -129,7 +129,7 @@
     justify-content: center;
     margin-top: 14px;
     margin-bottom: 60px;
-    padding-bottom: 28px;
+    padding-bottom: 20px;
 }
 .search-btn input{
     background-color: #FCCD03;
@@ -143,11 +143,34 @@
 }
 .form-control{
     display: flex;
-    align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+    margin-left: 30px;
     outline: none;
     border: none;
+    flex-direction: row;
+    justify-content: left;
 }
+.form-control .one-way label{
+    color: #0E2586;
+    font-weight: 500;
+}
+.form-control .round-way label{
+    color: #0E2586;
+    font-weight: 500;
+}
+.form-control .one-way{
+    display: flex;
+    align-items: center;
+}
+.form-control label{
+    padding-right: 8px;
+}
+.form-control .round-way{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
 .calender-field{
     display: flex;
     flex-direction: column;
@@ -160,4 +183,22 @@
   
   .custom-input:focus {
     outline: none;
+  }
+  .journey-date input {
+   border: none;
+  }
+  .journey-date input :focus{
+      border: none;
+      outline: none;
+  }
+  .return-date input {
+   border: none;
+  }
+  .return-date input :focus{
+      border: none;
+      outline: none;
+  }
+  .calender-field :disabled{
+      background-color: #fff;
+      display: none;
   }

@@ -5,7 +5,7 @@ import { BsBoxArrowInUpRight } from 'react-icons/bs';
 
 
 const Offer = ({ offer }) => {
-    console.log(offer);
+
     return (
        
         <div>

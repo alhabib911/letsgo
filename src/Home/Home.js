@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Booking from './Booking';
 import Timeline from './Timeline/Timeline';
 
-const Home = () => {
+const Home = ({setBooking}) => {
+    useEffect(() => {
+        setBooking([])
+   }, [])
     return (
         <div>
             <Booking></Booking>
